@@ -1,13 +1,20 @@
 {
   "name": "template-multi-packages-repository",
   "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "license": "MIT",
   "author": "Valentin Barit <valentin.barit@gmail.com>",
   "scripts": {
+    "build": "lerna exec --parallel -- rollup --config ../../rollup.config.js",
     "commit": "git-cz"
   },
   "devDependencies": {
     "git-cz": "^1.8.0",
-    "lerna": "^3.10.7"
+    "lerna": "^3.10.7",
+    "rollup": "^1.1.2",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-filesize": "^6.0.1"
   }
 }
