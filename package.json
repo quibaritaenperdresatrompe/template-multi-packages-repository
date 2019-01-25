@@ -3,8 +3,11 @@
   "private": true,
   "license": "MIT",
   "author": "Valentin Barit <valentin.barit@gmail.com>",
-  "scripts": {},
+  "scripts": {
+    "commit": "git-cz"
+  },
   "devDependencies": {
+    "git-cz": "^1.8.0",
     "lerna": "^3.10.7"
   }
 }
