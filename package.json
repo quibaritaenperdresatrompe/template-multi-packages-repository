@@ -1,0 +1,10 @@
+{
+  "name": "template-multi-packages-repository",
+  "private": true,
+  "license": "MIT",
+  "author": "Valentin Barit <valentin.barit@gmail.com>",
+  "scripts": {},
+  "devDependencies": {
+    "lerna": "^3.10.7"
+  }
+}
