@@ -1,1 +1,5 @@
-export const baz = () => "baz";
+import React from 'react';
+
+export const baz = () => 'baz';
+
+export const Baz = () => <div>{baz()}</div>;

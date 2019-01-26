@@ -8,13 +8,24 @@
   "author": "Valentin Barit <valentin.barit@gmail.com>",
   "scripts": {
     "build": "lerna exec --parallel -- rollup --config ../../rollup.config.js",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "storybook": "start-storybook -p 9001 -c .storybook"
   },
   "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "@storybook/react": "^4.1.11",
+    "babel-loader": "^8.0.5",
     "git-cz": "^1.8.0",
     "lerna": "^3.10.7",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
     "rollup": "^1.1.2",
+    "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-commonjs": "^9.2.0",
-    "rollup-plugin-filesize": "^6.0.1"
+    "rollup-plugin-filesize": "^6.0.1",
+    "webpack": "^4.29.0"
   }
 }

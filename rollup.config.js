@@ -1,3 +1,4 @@
+import babel from 'rollup-plugin-babel';
 import commonjs from 'rollup-plugin-commonjs';
 import filesize from 'rollup-plugin-filesize';
 import path from 'path';
@@ -10,7 +11,15 @@ const OUTPUT_DIR = path.join(PACKAGE_ROOT_PATH, 'dist');
 const formats = ['es', 'cjs'];
 
 export default {
-  plugins: [commonjs(), filesize()],
+  plugins: [
+    babel({
+      babelrc: false,
+      exclude: ['node_modules/**'],
+      presets: ['@babel/preset-env', '@babel/preset-react'],
+    }),
+    commonjs(),
+    filesize(),
+  ],
   input: INPUT_FILE,
   external: ['@azz/bar', '@azz/baz', '@azz/foo'],
   output: formats.map(format => ({

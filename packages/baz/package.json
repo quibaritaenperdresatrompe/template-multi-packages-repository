@@ -5,5 +5,8 @@
   "module": "dist/index.es.js",
   "files": [
     "dist/"
-  ]
+  ],
+  "peerDependencies": {
+    "react": "^16.7.0"
+  }
 }
