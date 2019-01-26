@@ -8,6 +8,8 @@ Run `commit` script to create a git commit.
 
 It uses [`git-cz`](https://github.com/streamich/git-cz) and respect [Conventional Commit specification](https://www.conventionalcommits.org/en/v1.0.0-beta.2/#specification).
 
+n.b. [`lint-staged`](https://github.com/okonet/lint-staged) run linters (cf. `.lintstagedrc` file) on `pre-commit` hook (cf. `precommit` script).
+
 ## Linting
 
 ### Prettier

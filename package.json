@@ -10,7 +10,8 @@
     "build": "lerna exec --parallel -- rollup --config ../../rollup.config.js",
     "commit": "git-cz",
     "lint": "eslint --cache .",
-    "storybook": "start-storybook -p 9001 -c .storybook"
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "precommit": "lint-staged"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
@@ -27,6 +28,7 @@
     "eslint-plugin-react": "^7.12.4",
     "git-cz": "^1.8.0",
     "lerna": "^3.10.7",
+    "lint-staged": "^8.1.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "rollup": "^1.1.2",
