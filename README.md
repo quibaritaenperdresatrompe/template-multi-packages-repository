@@ -49,3 +49,7 @@ It uses [`lerna`](https://github.com/lerna/lerna) and [`rollup`](https://github.
 
 1. Run `storybook` script
 2. Browse `localhost:9001/`
+
+## Inspirations
+
+- [azz/monorepo-experiments](https://github.com/azz/monorepo-experiments/)
