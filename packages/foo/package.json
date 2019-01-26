@@ -1,5 +1,5 @@
 {
-  "name": "@azz/foo",
+  "name": "@qbaepst/foo",
   "version": "0.0.0",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
@@ -7,6 +7,6 @@
     "dist/"
   ],
   "dependencies": {
-    "@azz/bar": "*"
+    "@qbaepst/bar": "*"
   }
 }

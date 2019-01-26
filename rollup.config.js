@@ -8,6 +8,7 @@ const PACKAGE_ROOT_PATH = process.cwd();
 const INPUT_FILE = path.join(PACKAGE_ROOT_PATH, 'src/index.js');
 const OUTPUT_DIR = path.join(PACKAGE_ROOT_PATH, 'dist');
 
+const allModules = ['@qbaepst/bar', '@qbaepst/baz', '@qbaepst/foo'];
 const formats = ['es', 'cjs'];
 
 export default {
@@ -21,11 +22,10 @@ export default {
     filesize(),
   ],
   input: INPUT_FILE,
-  external: ['@azz/bar', '@azz/baz', '@azz/foo'],
+  external: allModules,
   output: formats.map(format => ({
     file: path.join(OUTPUT_DIR, `index.${format}.js`),
     format,
     name: LERNA_PACKAGE_NAME,
-    sourcemap: true,
   })),
 };

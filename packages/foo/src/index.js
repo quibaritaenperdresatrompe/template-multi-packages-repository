@@ -1,4 +1,4 @@
-import { bar, barBaz } from '@azz/bar';
+import { bar, barBaz } from '@qbaepst/bar';
 import foo from './foo';
 
 // eslint-disable-next-line no-console

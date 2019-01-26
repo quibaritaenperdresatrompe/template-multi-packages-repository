@@ -1,4 +1,4 @@
-import { baz } from '@azz/baz';
+import { baz } from '@qbaepst/baz';
 
 export const bar = () => 'bar';
 
