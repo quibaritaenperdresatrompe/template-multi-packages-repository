@@ -1,7 +1,8 @@
 import { configure } from '@storybook/react';
 
 const loadStories = () => {
-  require('../packages/baz/__stories__/');
+  const requireContext = require.context('../packages', true, /__stories__\/index.js$/);
+  requireContext.keys().map(requireContext);
 };
 
 configure(loadStories, module);
