@@ -2,6 +2,12 @@
 
 Template for multi-packages repository.
 
+It provides specific features for React, e.g. :
+
+- Storybook with [`@stroybook/react`](https://github.com/storybooks/storybook/tree/master/app/react) and stories in `__stories__/` folders.
+- Babel with [`@babel/preset-react`](https://github.com/babel/babel/tree/master/packages/babel-preset-react).
+- ESLint with [`eslint-plugin-react`](https://github.com/yannickcr/eslint-plugin-react) and some rules in `.eslintrc` file.
+
 ## Contribution
 
 Run `commit` script to create a git commit.
