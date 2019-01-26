@@ -1,6 +1,7 @@
-import { bar, bar_baz } from "@azz/bar";
-import foo from "./foo";
+import { bar, barBaz } from '@azz/bar';
+import foo from './foo';
 
-console.log(foo(), bar(), bar_baz());
+// eslint-disable-next-line no-console
+console.log(foo(), bar(), barBaz());
 
-export { default as foo } from "./foo";
+export { default as foo } from './foo';

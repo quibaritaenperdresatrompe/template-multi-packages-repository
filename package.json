@@ -9,6 +9,7 @@
   "scripts": {
     "build": "lerna exec --parallel -- rollup --config ../../rollup.config.js",
     "commit": "git-cz",
+    "lint": "eslint --cache .",
     "storybook": "start-storybook -p 9001 -c .storybook"
   },
   "devDependencies": {
@@ -18,6 +19,12 @@
     "@babel/preset-react": "^7.0.0",
     "@storybook/react": "^4.1.11",
     "babel-loader": "^8.0.5",
+    "eslint": "^5.12.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-import": "^2.15.0",
+    "eslint-plugin-jsx-a11y": "^6.2.0",
+    "eslint-plugin-react": "^7.12.4",
     "git-cz": "^1.8.0",
     "lerna": "^3.10.7",
     "react": "^16.7.0",
